@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+$disable-warnings: true !global;
+$max-width: 75em;
+
+@import "lib/functions";
+@import "settings/colors";
+@import "settings/typography";
+
+// Vendor
+@import "bower/normalize-scss/normalize";
+@import "bourbon";
+@import "neat";
+
+// Settings
+@import "settings/layout";
+
+// Libs
+@import "lib/ie";
+@import "lib/utilities";
+@import "lib/animations";
+
+// Elements
+@import "elements/document";
+@import "elements/typography";
+
+// Blocks
+@import "blocks/content";
+
+// Sections
+@import "sections/header";
+@import "sections/footer";

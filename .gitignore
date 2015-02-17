@@ -1,0 +1,18 @@
+.env
+.env.php
+.php-version
+node_modules
+
+# Composer
+vendor/*
+!vendor/.gitkeep
+
+# Craft
+craft/config/license.key
+craft/storage/backups/
+craft/storage/runtime/
+craft/storage/userphotos/
+craft/storage/logo/
+
+# Uploads
+public/content/

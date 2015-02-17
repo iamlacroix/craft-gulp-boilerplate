@@ -1,0 +1,17 @@
+@mixin media-ie8-only {
+  @media \0screen {
+    @content;
+  }
+}
+
+@mixin media-and-ie8($args) {
+  @if $args > 0 {
+    @include media(unquote($args)) {
+      @content;
+    }
+  }
+
+  @include media-ie8-only {
+    @content;
+  }
+}

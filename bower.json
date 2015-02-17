@@ -1,0 +1,7 @@
+{
+  "name": "private",
+  "private": true,
+  "devDependencies": {
+    "normalize-scss": "~3.0.2"
+  }
+}

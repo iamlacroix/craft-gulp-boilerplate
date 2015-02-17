@@ -1,0 +1,24 @@
+{
+  "buttons": [
+    "html",
+    "|",
+    "formatting",
+    "|",
+    "bold",
+    "italic",
+    "|",
+    "unorderedlist",
+    "orderedlist",
+    "|",
+    "link"
+  ],
+  "formattingTags": [
+    "p",
+    "blockquote",
+    "h3",
+    "h4",
+    "h5"
+  ],
+  "tabFocus": false,
+  "plugins": ["fullscreen"]
+}

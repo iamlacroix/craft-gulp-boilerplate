@@ -1,0 +1,90 @@
+$content--link-color: inherit !default;
+
+.b-content {
+  p,
+  li,
+  th,
+  td,
+  blockquote,
+  figcaption {
+    line-height: 1.75;
+
+    a,
+    a:focus,
+    a:visited {
+      color: $content--link-color;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  } // p, li, ...
+
+  p,
+  li {
+    font-size: 1.125em;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  li {
+    margin-bottom: 0.5em;
+  }
+
+  p:last-child,
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 2.25em;
+    margin: 1.5em auto;
+  }
+
+  ul ul {
+    list-style: circle;
+  }
+
+  ul ul ul {
+    list-style: square;
+  }
+
+  blockquote {
+    clear: both;
+    padding: 1em;
+    margin: 1.5em 1em;
+    border-left: 1px solid #ccc;
+    background: inherit;
+    color: inherit;
+  }
+
+  img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 1em auto;
+  }
+
+  table {
+    width: auto;
+  }
+
+  th,
+  td {
+    vertical-align: top;
+    padding: 0.75em 0.5em;
+    border-bottom: none;
+
+    &:first-child { padding-left: 0; }
+    &:last-child { padding-right: 0; }
+  }
+
+  figure {
+    clear: both;
+    margin: 1.5em auto;
+  }
+}

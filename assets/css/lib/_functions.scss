@@ -1,0 +1,15 @@
+@function image-path($path: ''){
+  @return "/assets/images/#{$path}";
+}
+
+@function image-url($path: '', $null1: '', $null2: ''){
+  @return url('#{image-path($path)}');
+}
+
+@function font-path($path: ''){
+  @return "/assets/fonts/#{$path}";
+}
+
+@function font-url($path: ''){
+  @return url('#{font-path($path)}');
+}
