@@ -20,9 +20,10 @@ $uploadsPath = 'content/';
 return array(
 
   '*' => array(
-    'omitScriptNameInUrls' => true,
-    'cacheMethod' => 'file',
     'devMode' => $dev,
+    'siteUrl' => $url,
+    'cacheMethod' => 'file',
+    'omitScriptNameInUrls' => true,
     'generateTransformsBeforePageLoad' => true,
     'postCpLoginRedirect' => 'entries',
     'environmentVariables' => array(
@@ -36,6 +37,7 @@ return array(
 
   'example.com' => array(
     'devMode' => false,
+    'siteUrl' => "http://www.example.com/",
     'environmentVariables' => array(
       'siteUrl'           => "http://www.example.com/",
       'uploadsUrl'        => "http://www.example.com/$uploadsPath",
